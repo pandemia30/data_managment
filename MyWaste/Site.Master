@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MyWaste.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+	<style type="text/css">
+		.auto-style1 {
+			float: left;
+			padding: 15px 15px;
+			font-size: small;
+			line-height: 20px;
+			color: #CCCCCC;
+			}
+		.auto-style3 {
+			float: left;
+			padding: 15px 15px;
+			font-size: small;
+			line-height: 20px;
+			color: #CCCCCC;
+			width: 115px;
+		}
+		.auto-style4 {
+			color: #CCCCCC;
+		}
+		.auto-style6 {
+			float: left;
+			padding: 15px 15px;
+			font-size: small;
+			line-height: 20px;
+			width: 117px;
+		}
+		.auto-style8 {
+			float: left;
+			padding: 15px 15px;
+			font-size: x-large;
+			line-height: 20px;
+			color: #FFFFFF;
+			width: 189px;
+		}
+		.auto-style9 {
+			color: #009900;
+		}
+		.auto-style10 {
+			float: left;
+			padding: 15px 15px;
+			font-size: small;
+			line-height: 20px;
+			color: #CCCCCC;
+			width: 115px;
+		}
+		</style>
+
+</head>
+<body>
+    <form runat="server">
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <strong><span class="auto-style9">
+                    <a class="auto-style8" runat="server" href="~/Intro.aspx">Я разделяю</a></span></strong><span class="text-muted"><a class="auto-style10" runat="server" href="~/Request.aspx">Заявки</a></span><span class="auto-style4"><a class="auto-style6" runat="server" href="~/News.aspx">Новости</a></span><a class="auto-style3" runat="server" href="~/Drivers.aspx">Водители</a><a class="auto-style1" runat="server" href="~/CategoryList.aspx">Категории отходов </a>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <br />
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> My waste 2019, Binwell University </p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
