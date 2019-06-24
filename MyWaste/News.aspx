@@ -5,7 +5,7 @@
     <div class="jumbotron">
         <h1>Новости</h1>
         <p class="lead">В данном разделе представлены обновления и новости</p>
-        <a href="/AddEditNews.aspx" style="color: #000099">ADD NEWS</a>
+        <strong>+ Добавить новость</strong>
     <!--   <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p> -->
     </div>
 

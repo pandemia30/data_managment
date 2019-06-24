@@ -89,7 +89,7 @@ dfn {
 }
 
 hr {
-  height: 0;
+  height: -39px;
   -moz-box-sizing: content-box;
        box-sizing: content-box;
 }
@@ -353,6 +353,8 @@ a:focus {
 
 img {
   vertical-align: middle;
+    height: 79px;
+    width: 384px;
 }
 
 .img-responsive {
@@ -862,6 +864,9 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+    top: -47px;
+    left: 0px;
+    height: 160px;
 }
 
 .col-xs-1,
@@ -1409,7 +1414,8 @@ pre code {
 table {
   max-width: 100%;
   background-color: transparent;
-	}
+    text-align: left;
+}
 
 th {
   text-align: left;
